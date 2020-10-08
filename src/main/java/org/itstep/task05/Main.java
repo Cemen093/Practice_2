@@ -1,5 +1,7 @@
 package org.itstep.task05;
 
+import org.itstep.task04.Fraction;
+
 /**
  * Создать  класс  Money  (Деньги)  для  работы  с  денежными  суммами.
  * <p>

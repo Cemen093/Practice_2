@@ -22,6 +22,6 @@ package org.itstep.task06;
  */
 public class Main {
     public static void main(String[] args) {
-
+        //MainString s = "";
     }
 }
