@@ -13,7 +13,7 @@ package org.itstep.task06;
  * - конструктор, принимающий в качестве параметра строковый литерал;
  * - конструктор, принимающий в качестве параметра символ и длину строки;
  * - метод получения длины строки (length());
- * - метод очистки строки (делает строку пустой) (clear());
+ * - метод очистки строки (делает строку пустой) (clean());
  * - метод конкатенации (соединяет две строки типа MainString) (concat);
  * - метод поиска символа в строке (indexOf()).
  * - метод toString(), который возвращает строковое представление объекта
@@ -22,6 +22,9 @@ package org.itstep.task06;
  */
 public class Main {
     public static void main(String[] args) {
-        //MainString s = "";
+        MainString s = new MainString("qwe");
+        String a = new String();
+        a = s.toString();
+        System.out.println(a);
     }
 }
