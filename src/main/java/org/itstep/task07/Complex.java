@@ -1,6 +1,5 @@
 package org.itstep.task07;
 
-import sun.swing.CachedPainter;
 
 public class Complex {
     private double real;
