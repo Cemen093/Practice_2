@@ -22,9 +22,5 @@ package org.itstep.task07;
  */
 public class Main {
     public static void main(String[] args) {
-        Complex a = new Complex(1, 999998);
-        Complex b = new Complex(2, 000001);
-        Complex c = a.plus(b);
-        System.out.println(c.getReal() + "," + c.getImaginary());
     }
 }
