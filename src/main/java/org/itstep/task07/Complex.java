@@ -30,12 +30,11 @@ public class Complex {
         //(a+bi)-(c+di)=(a-c)+(b-d)i
         return new Complex(real - b.real, imaginary - b.imaginary);
     }
-
-    // TODO: проверить формулу
+    
     public Complex times(Complex b){
-        //(a+bi)*(c+di)=(ac-bd)+(dc+ad)i
+        //(a+bi)*(c+di)=(ac-bd)+(ad + bc)i
         return new Complex(real * b.real - imaginary * b.imaginary,
-                b.imaginary * b.real + real * b.imaginary);
+                real * b.imaginary + imaginary * b.real);
     }
 
     public double getReal() {
@@ -50,10 +49,19 @@ public class Complex {
         return imaginary;
     }
 
-    // TODO: Почему сюда приходит int, когда должен быть double
-    public void setImaginary(int imaginary) {
+    public void setImaginary(double imaginary) {
         this.imaginary = imaginary;
     }
 
-    // TODO: Не переопределен метод toString()
+    @Override
+    public String toString(){
+        if (imaginary == 0){return new String(String.valueOf(real));}
+        else{
+            if (real == 0){return new String(imaginary + "i");}
+            else{
+                if (imaginary > 0){return new String( real + " + " + imaginary + "i"); }
+                else{return new String( real + " - " + Math.abs(imaginary) + "i");}
+            }
+        }
+    }
 }
