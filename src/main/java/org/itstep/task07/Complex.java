@@ -31,6 +31,7 @@ public class Complex {
         return new Complex(real - b.real, imaginary - b.imaginary);
     }
 
+    // TODO: проверить формулу
     public Complex times(Complex b){
         //(a+bi)*(c+di)=(ac-bd)+(dc+ad)i
         return new Complex(real * b.real - imaginary * b.imaginary,
@@ -49,7 +50,10 @@ public class Complex {
         return imaginary;
     }
 
+    // TODO: Почему сюда приходит int, когда должен быть double
     public void setImaginary(int imaginary) {
         this.imaginary = imaginary;
     }
+
+    // TODO: Не переопределен метод toString()
 }
